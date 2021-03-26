@@ -19,9 +19,11 @@ class CustomThemeViewController: UIViewController {
 
         storylyViewDefaultTheme.storylyInit = StorylyInit(storylyId: @YOUR_APP_INSTANCE_TOKEN_FROM_DASHBOARD)
         storylyViewDefaultTheme.rootViewController = self
+        storylyViewCustomTheme.delegate = self
         
         storylyViewCustomTheme.storylyInit = StorylyInit(storylyId: @YOUR_APP_INSTANCE_TOKEN_FROM_DASHBOARD)
         storylyViewCustomTheme.rootViewController = self
+        storylyViewCustomTheme.delegate = self
         
 //        storylyViewCustomTheme.storyGroupTextColor = UIColor(red: 240/255, green: 57/255, blue: 50/255, alpha: 1.0)
 //
@@ -45,5 +47,12 @@ class CustomThemeViewController: UIViewController {
         let progressbarColor = [UIColor(red: 251/255, green: 50/255, blue: 0, alpha: 1.0),
                                 UIColor(red: 255/255, green: 235/255, blue: 59/255, alpha: 1.0)]
         storylyViewCustomTheme.storylyItemProgressBarColor = progressbarColor
+    }
+}
+
+extension CustomThemeViewController: StorylyDelegate {
+    func storylyLoaded(_ storylyView: StorylyView, storyGroupList: [StoryGroup]) {
+        let allStoriesSeen = storyGroupList.allSatisfy { $0.seen == true }
+        print(allStoriesSeen)
     }
 }

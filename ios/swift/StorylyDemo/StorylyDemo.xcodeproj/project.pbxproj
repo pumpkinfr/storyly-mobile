@@ -11,7 +11,6 @@
 		41501BDF25D18A2500928E7C /* EventHandlingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41501BDE25D18A2500928E7C /* EventHandlingViewController.swift */; };
 		41501BE525D18AA700928E7C /* CustomSizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41501BE125D18AA600928E7C /* CustomSizeViewController.swift */; };
 		41501BE625D18AA700928E7C /* CustomThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41501BE225D18AA600928E7C /* CustomThemeViewController.swift */; };
-		41501BE725D18AA700928E7C /* CustomTheme.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41501BE325D18AA600928E7C /* CustomTheme.storyboard */; };
 		41501BE825D18AA700928E7C /* CustomSize.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41501BE425D18AA600928E7C /* CustomSize.storyboard */; };
 		41501BEF25D1B2FB00928E7C /* EventHandling.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41501BEE25D1B2FB00928E7C /* EventHandling.storyboard */; };
 		A16DA837233B90E3000514FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16DA836233B90E3000514FA /* AppDelegate.swift */; };
@@ -26,7 +25,6 @@
 		41501BDE25D18A2500928E7C /* EventHandlingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventHandlingViewController.swift; sourceTree = "<group>"; };
 		41501BE125D18AA600928E7C /* CustomSizeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSizeViewController.swift; sourceTree = "<group>"; };
 		41501BE225D18AA600928E7C /* CustomThemeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomThemeViewController.swift; sourceTree = "<group>"; };
-		41501BE325D18AA600928E7C /* CustomTheme.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CustomTheme.storyboard; sourceTree = "<group>"; };
 		41501BE425D18AA600928E7C /* CustomSize.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CustomSize.storyboard; sourceTree = "<group>"; };
 		41501BEE25D1B2FB00928E7C /* EventHandling.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EventHandling.storyboard; sourceTree = "<group>"; };
 		736369B3007CB8524D1E56A7 /* Pods_StorylyDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StorylyDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				A16DA83A233B90E3000514FA /* BasicViewController.swift */,
+				41501BE225D18AA600928E7C /* CustomThemeViewController.swift */,
 				A16DA83C233B90E3000514FA /* Basic.storyboard */,
 			);
 			path = Basic;
@@ -104,8 +103,6 @@
 				41501BF125D1B30100928E7C /* EventHandling */,
 				41501BE425D18AA600928E7C /* CustomSize.storyboard */,
 				41501BE125D18AA600928E7C /* CustomSizeViewController.swift */,
-				41501BE325D18AA600928E7C /* CustomTheme.storyboard */,
-				41501BE225D18AA600928E7C /* CustomThemeViewController.swift */,
 				A16DA836233B90E3000514FA /* AppDelegate.swift */,
 				A16DA83F233B90E5000514FA /* Assets.xcassets */,
 				A16DA841233B90E5000514FA /* LaunchScreen.storyboard */,
@@ -187,7 +184,6 @@
 				A16DA83E233B90E3000514FA /* Basic.storyboard in Resources */,
 				41501BE825D18AA700928E7C /* CustomSize.storyboard in Resources */,
 				41501BEF25D1B2FB00928E7C /* EventHandling.storyboard in Resources */,
-				41501BE725D18AA700928E7C /* CustomTheme.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,7 +387,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BITCIDE_GENERATION_MODE = marker;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6M3HAPKN9X;
+				DEVELOPMENT_TEAM = F8EFCGRF8U;
 				INFOPLIST_FILE = StorylyDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -399,7 +395,7 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_CFLAGS = "-fembed-bitcode-marker";
-				PRODUCT_BUNDLE_IDENTIFIER = com.appsamurai.storyly.StorylyDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appsamurai.storyly.StorylyDemo.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -413,7 +409,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BITCIDE_GENERATION_MODE = bitcode;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6M3HAPKN9X;
+				DEVELOPMENT_TEAM = F8EFCGRF8U;
 				INFOPLIST_FILE = StorylyDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -421,7 +417,7 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_CFLAGS = "-fembed-bitcode";
-				PRODUCT_BUNDLE_IDENTIFIER = com.appsamurai.storyly.StorylyDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appsamurai.storyly.StorylyDemo.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
